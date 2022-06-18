@@ -34,12 +34,6 @@
 
 }
 
-.card-set__link:hover .card-set__tex,
-.card-set__link:focus .card-set__tex {
-    transform: translateY(0);
-
-}
-
 .card-set__text {
     position: absolute;
     top: 0;
@@ -55,6 +49,11 @@
     background-color: var(--card-bg-color);
     transform: translateY(100%);
     transition: transform var(--slow-anim);
+
+    .card-set__link:hover &,
+    .card-set__link:focus & {
+        transform: translateY(0);
+    }
 
 }
 
