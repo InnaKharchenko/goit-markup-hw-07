@@ -108,7 +108,7 @@ p {
   text-decoration: none;
 }
 
-.logo-black {
+.logo__black {
   color: var(--text-title-color);
 }
 
@@ -164,15 +164,20 @@ p {
 
 /*CONTACTS*/
 
-.contact-list {
+.contact__list {
   display: flex;
   margin-left: auto;
   align-items: center;
 }
-.contact-list .contact-item + .contact-item {
-  margin-left: 50px;
+.contact__item {
+  margin-right: 50px;
 }
-.contact-link {
+
+.contact__item:last-child {
+  margin-right: 0;
+}
+
+.contact__link {
   display: flex;
   align-items: center;
   padding-top: 32px;
@@ -185,16 +190,17 @@ p {
   color: var(--main-text-color);
   transition: color var(--slow-anim);
 }
-.contact-link:hover,
-.contact-link:focus {
+.contact__link:hover,
+.contact__link:focus {
   color: var(--accent-color);
 }
-.contact-icon {
+.contact__icon {
   margin-right: 10px;
   fill: currentColor;
 }
 /*section-hero*/
-.hero__section {
+
+.hero-section {
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
@@ -210,7 +216,7 @@ p {
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
@@ -312,7 +318,7 @@ p {
   color: var(--accent-color);
 
 }
-.modal-icon {
+.modal-btn__icon {
   fill: currentColor;
 }
 
@@ -730,7 +736,7 @@ p {
   padding-bottom: 60px;
   background-color: var(--main-bg-color);
 }
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
 }
@@ -748,13 +754,13 @@ p {
   color: var(--accent-color);
   text-decoration: none;
 }
-.logo-white {
+.logo__white {
   color: var(--second-accent-text-color);
 }
-.address-box {
+.address-footer {
   font-style: normal;
 }
-.footer-item {
+.address-footer__item {
   text-decoration: none;
 }
 .footer-list .footer-item + .footer-item {
@@ -771,6 +777,10 @@ p {
   color: var(--second-accent-text-color);
   transition: color var(--slow-anim);
 }
+.adress-footer:hover,
+.adress-footer:focus {
+  color: var(--accent-color);
+}
 .contacts-footer {
   font-style: normal;
   text-decoration: none;
@@ -780,16 +790,13 @@ p {
   color: var(--accent-text-color);
   transition: color var(--slow-anim);
 }
-.adress-footer:hover,
-.adress-footer:focus {
-  color: var(--accent-color);
-}
+
 .contacts-footer:hover,
 .contacts-footer:focus {
   color: var(--accent-color);
 }
 
-.footer-description {
+.footer-socials__description {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -798,16 +805,20 @@ p {
   color: var(--second-accent-text-color);
 }
 
-.footer-socials-list {
+.footer-socials__list {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer-socials-list .footer-socials-item + .footer-socials-item {
-  margin-left: 10px;
+.footer-socials__item {
+  margin-right: 10px;
 }
 
-.footer-socials-link {
+.footer-socials__item:last-child {
+  margin-right: 0;
+}
+
+.footer-socials__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -818,23 +829,24 @@ p {
   background-color: var(--bg-icons-color);
   transition: background-color var(--slow-anim);
 }
-.footer-socials-link:hover,
-.footer-socials-link:focus {
+.footer-socials__link:hover,
+.footer-socials__link:focus {
   background-color: var(--accent-color);
 }
-.footer-socials-icon {
-  fill: currentColor;
+.footer-socials__icon {
+  
   width: 20px;
   height: 20px;
+  fill: currentColor;
 }
 
 /*FOOTER SABSCRIBE BLOK*/
 
-.footer-subscribe-container {
+.footer-subscribe  {
   margin-left: auto;
 
 }
-.footer-subscribe-text {
+.footer-subscribe__text {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -850,7 +862,7 @@ p {
   
 }
 
-.footer-email-input {
+.footer-subscribe__input {
   width: 358px;
   height: 50px;
   padding: 15px 16px;
@@ -865,8 +877,8 @@ p {
   transition: border-color var(--slow-anim), color var(--slow-anim);
 }
 
-.footer-email-input:hover,
-.footer-email-input:focus {
+.footer-subscribe__inputt:hover,
+.ffooter-subscribe__input:focus {
   border-color: var(--accent-color);
   outline: 0;
 }
@@ -898,7 +910,7 @@ p {
 
 
 
-.footer-send-icon {
+.footer-btn__icon {
   align-items: center;
   justify-content: center;
   margin-left: 10px;
@@ -908,7 +920,7 @@ p {
 }
 
 
-.footer-label {
+.footer-subscribe__email {
   position: absolute;
   white-space: nowrap;
   width: 1px;
