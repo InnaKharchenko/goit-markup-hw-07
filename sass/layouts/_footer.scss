@@ -34,18 +34,18 @@
     font-style: normal;
 }
 
+
 .address-footer__item {
     text-decoration: none;
+    margin-bottom: 9px;
 }
 
-.address-footer__item {
+.footer-contacts__item {
     margin-bottom: 9px;
-
     &:last-child {
             margin-bottom: 0;
         }
 }
-
 
 
 .adress-footer__link {
@@ -73,7 +73,7 @@
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
     transition: color var(--slow-anim);
-
+    
     &:hover,
     &:focus {
             color: var(--accent-color);
@@ -97,11 +97,12 @@
 
 .footer-socials__item {
     margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    } 
 }
 
-.footer-socials__item:last-child {
-    margin-right: 0;
-}
 
 .footer-socials__link {
     display: flex;

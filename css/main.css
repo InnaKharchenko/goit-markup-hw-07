@@ -755,13 +755,14 @@ p {
 
 .address-footer__item {
   text-decoration: none;
-}
-
-.address-footer__item {
   margin-bottom: 9px;
 }
 
-.address-footer__item:last-child {
+.footer-contacts__item {
+  margin-bottom: 9px;
+}
+
+.footer-contacts__item:last-child {
   margin-bottom: 0;
 }
 
